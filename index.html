@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Dinámicos - Unidad II</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Implementación de Elementos Dinámicos</h1>
+    </header>
+
+    <main>
+        <section id="mostrar-ocultar">
+            <h2>1. Mostrar / Ocultar Elementos</h2>
+            <button id="btn-toggle">Ver detalles del proyecto</button>
+            <div id="caja-info" class="oculto">
+                <p>Este bloque aparece y desaparece manipulando las clases CSS a través del DOM.</p>
+            </div>
+        </section>
+
+        <section id="eventos-mouse">
+            <h2>2. Eventos del Mouse</h2>
+            <div id="tarjeta-mouse" class="tarjeta">
+                <p>Pasa el cursor sobre mí</p>
+            </div>
+        </section>
+
+        <section id="carrusel-seccion">
+            <h2>3. Transiciones en Carrusel</h2>
+            <div class="carrusel-contenedor">
+                <div class="carrusel-tira" id="tira-carrusel">
+                    <div class="carrusel-item" style="background-color: #ff6b6b;">Img 1</div>
+                    <div class="carrusel-item" style="background-color: #4ecdc4;">Img 2</div>
+                    <div class="carrusel-item" style="background-color: #ffe66d; color: #333;">Img 3</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="eventos-scroll">
+            <h2>4. Eventos de Scroll</h2>
+            <p>Haz scroll hacia abajo para activar la animación.</p>
+            
+            <div style="height: 60vh;"></div> <div class="oculto-scroll caja-scroll">
+                <h3>¡Animación activada!</h3>
+                <p>Este elemento fue detectado por el IntersectionObserver.</p>
+            </div>
+            
+            <div style="height: 30vh;"></div> </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
